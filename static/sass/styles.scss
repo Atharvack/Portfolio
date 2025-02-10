@@ -1,5 +1,5 @@
 // custom variables
-$primary: #411175;
+$primary: #000000;
 $light: #ffffff;
 $line-height: 1px;
 
@@ -51,6 +51,7 @@ a {
   .material-icons-outlined {
     color: $light;
     font-size: 30px;
+    
   }
 }
 
@@ -91,7 +92,7 @@ a {
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, rgba(65,17,117,1) 0%, rgba(112,25,117,1) 100%);
+  background: linear-gradient(60deg, rgb(1, 0, 5) 0%, rgb(12, 12, 36) 100%);
   color: $light;
 }
 
@@ -127,7 +128,7 @@ a {
 
 .custom-gradient {
   position: relative;
-  background: linear-gradient(60deg, rgba(65,17,117,1) 0%, rgba(112,25,117,1) 100%);
+  background: linear-gradient(60deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
   color: $light;
 }
 
