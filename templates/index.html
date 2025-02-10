@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{ '../static/images/favicon.ico' }">
+    <link rel="icon" type="images/png" href="{% static 'images/tabicon.png' %}">
     
     <!-- Custom CSS -->
     <link href="../static/sass/styles.css" rel="stylesheet">
 
-    <title>Portfolio Website</title>  
+    <title>Atharva K</title>  
   </head>
   <body>
     <div class="container-fluid px-0">
@@ -79,14 +79,20 @@
                         {{ hero.description }}
                       </p>
                       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a href="https://www.linkedin.com/in/atharvack" target="_blank">
+                         
+                          <!-- <span class="material-icons-outlined ms-2">help_outline</span> -->
                         <button type="button" class="btn btn-light btn-lg text-uppercase px-4 py-2 me-sm-3">
                           Linkedin
-                          <span class="material-icons-outlined ms-2">help_outline</span>
+                          <!-- <span class="material-icons-outlined ms-2">help_outline</span> -->
                         </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/atharvack" target="_blank">
                         <button type="button" id="demo" class="btn btn-outline-light btn-lg text-uppercase px-4 py-2 me-sm-3">
                           Github
-                          <span class="material-icons-outlined ms-2">play_circle</span>
+                          <!-- <span class="material-icons-outlined ms-2">play_circle</span> -->
                         </button>
+                        </a>
                       </div>
                     </div>
                 </div>
@@ -229,7 +235,7 @@
         
 
         <!-- Contact -->
-        <section class="bg-primary p-5 p-sm-5 mt-5">
+        <section id="contact" class="bg-primary p-5 p-sm-5 mt-5">
           <div class="container">
             
             {% if contact_data %}
@@ -242,7 +248,7 @@
                     </a>
                   </li>
                   <li class="nav-item me-5">
-                    <a href="#" class="nav-link px-2 text-white">
+                    <a href="mailto:{{contact.email}}" class="nav-link px-2 text-white">
                       <span class="material-icons-outlined contact-icon me-1">email</span>
                       {{ contact.email }}
                     </a>
