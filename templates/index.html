@@ -64,10 +64,10 @@
         
         <!-- Hero -->
         <header class="py-3">
-          <div class="container px-5">
+          <div class="container px-5 ">
             
             {% if hero_data %}
-              <div class="row align-items-center">
+              <div class="row align-items-center justify-content-center">
                 
                 {% for hero in hero_data %}
                 <div class="col-lg-8 col-xl-7 col-xxl-6">
@@ -80,17 +80,17 @@
                       </p>
                       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
                         <button type="button" class="btn btn-light btn-lg text-uppercase px-4 py-2 me-sm-3">
-                          Learn More
+                          Linkedin
                           <span class="material-icons-outlined ms-2">help_outline</span>
                         </button>
                         <button type="button" id="demo" class="btn btn-outline-light btn-lg text-uppercase px-4 py-2 me-sm-3">
-                          View Demo
+                          Github
                           <span class="material-icons-outlined ms-2">play_circle</span>
                         </button>
                       </div>
                     </div>
                 </div>
-                <div class="col-xl-5 col-xxl-6 justify-content-center">
+                <div class="col-percentage justify-content-center">
 
                   {% if hero.image.url %}
                     <img class="card-img-top" src="{{ hero.image.url }}" alt="Hero Image">
@@ -117,10 +117,10 @@
               <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
             </defs>
             <g class="parallax">
-              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(2,11,21,0.7)" />
+              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(2,11,21,0.5)" />
+              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(2,11,21,0.3)" />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(2,11,31)" />
             </g>
           </svg>
         </div>
@@ -131,11 +131,11 @@
       <main>
         
         <!-- About -->
-        <section id="about" class="text-center py-5">
+        <section id="about" class="bg-primary text-center py-5">
           <div class="container py-5">
             <div class="row justify-content-center">
               <h2 class="fw-bold">About</h2>
-              <p class="lead text-muted mb-5">
+              <p class="lead mb-5">
                 I am a freelance web developer who builds elegant, fast, and scalable web applications.
               </p>
             </div>
@@ -149,11 +149,11 @@
                   <div class="col-lg-4 mx-auto mb-5">
                     <div class="d-flex mb-5 justify-content-center">
                       <div class="about-icon d-inline-flex align-items-center justify-content-center bg-primary text-white fs-4 rounded-2">
-                        <span class="about material-icons-outlined text-white">{{ about.icon }}</span>
+                        <span class="about material-icons-outlined text-light">{{ about.icon }}</span>
                       </div>
                     </div>
-                    <h5>{{ about.title }}</h5>
-                    <p class="text-muted mb-0">
+                    <h5 class="text-light">{{ about.title }}</h5>
+                    <p class=" mb-0">
                       {{ about.description }}
                     </p>
                   </div>
@@ -171,11 +171,11 @@
         <hr>
   
         <!-- Projects -->
-        <section id="projects" class="text-center py-5">
+        <section id="projects" class="bg-primary text-center py-5">
           <div class="container py-5">
             <div class="row justify-content-center">
               <h2 class="fw-bold">Projects</h2>
-              <p class="lead text-muted mb-5">
+              <p class="lead mb-5">
                 View some of my latest projects
               </p>
             </div>
@@ -187,7 +187,7 @@
                 
                 {% for project in project_data %}
                   <div class="col-lg-4 mx-auto mb-5">
-                    <div class="card h-100 shadow-lg border-0 bg-light">
+                    <div class="card h-100 shadow-lg border-0 ">
 
                       {% if project.image.url %}
                         <img class="card-img-top" src="{{ project.image.url }}" alt="Project">
@@ -197,14 +197,14 @@
 
                       <div class="card-body p-4">
                         <h5 class="card-title mb-3">{{ project.name }}</h5>
+                        <p class="card-text">
+                          {{ project.description }}
+                        </p>
                         <div class="mb-2">
                           {% for tag in project.tags.all %}
                             <div class="badge bg-primary rounded-pill">{{ tag.name }}</div>
                           {% endfor %}
                         </div>
-                        <p class="card-text">
-                          {{ project.description }}
-                        </p>
                       </div>
                       <div class="card-footer bg-transparent mb-3">
                         <a class="btn btn-outline-primary btn-sm text-uppercase" href="{{ project.link }}" target="_blank">
@@ -224,6 +224,9 @@
           </div>
         </section>
         <!-- End Projects -->
+        
+
+        
 
         <!-- Contact -->
         <section class="bg-primary p-5 p-sm-5 mt-5">
@@ -266,10 +269,10 @@
     </div>
     
     <!-- Footer -->
-    <footer class="text-center py-4">
+    <footer class="bg-primary text-center py-4">
       
       {% if footer_data %}
-        <div class="container px-5 mb-2">
+        <div class="container text-light px-5 mb-2">
           {% for footer in footer_data %}
             Copyright &copy; <script>document.write(new Date().getFullYear())</script> {{ footer.copyright }}.
           {% endfor %}

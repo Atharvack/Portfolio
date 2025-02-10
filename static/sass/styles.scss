@@ -1,7 +1,9 @@
 // custom variables
-$primary: #000000;
-$light: #ffffff;
+$primary: rgb(2, 11, 31);
+$light: hsl(0, 1%, 66%);
 $line-height: 1px;
+$tcol: hsl(0, 1%, 73%);
+$tmute: hsl(0, 1%, 50%);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/material-icons/iconfont/material-icons.css';
@@ -14,6 +16,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+hr{
+  
+  margin: 0;
+}
 
 /* ---------- BUTTONS ---------- */
 
@@ -81,6 +87,9 @@ a {
 
 
 /* ---------- HERO ---------- */
+.col-percentage{
+  width: 25%;
+}
 
 .hero-image {
   height: 500px;
@@ -92,10 +101,21 @@ a {
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, rgb(1, 0, 5) 0%, rgb(12, 12, 36) 100%);
+  background: linear-gradient(60deg, rgb(2, 25, 69) 0%, rgb(0, 0, 0)100%);
   color: $light;
 }
 
+/*--------text-----------*/
+h2{
+color:$tcol;
+}
+h5{
+  color:$tcol;
+  }
+
+p{ 
+  color:$tmute;
+}
 
 /* ---------- ABOUT ---------- */
 
@@ -104,16 +124,23 @@ a {
   width: $size;
   height: $size;
   vertical-align: middle;
+  color: $light;
+  
 }
+
+
+
 
 .about {
   font-size: 40px;
+  
 }
 
 
 /* ---------- PROJECTS ---------- */
 
 .card {
+  background-color: $tcol;
   img {
     height: 250px;
   }
@@ -203,6 +230,9 @@ a {
 
   .hero-image {
     height: 50%;
+  }
+  .col-percentage {
+    width: 50%; /* Adjust percentage for smaller screens */
   }
 }
 
