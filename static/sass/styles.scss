@@ -1,9 +1,9 @@
 // custom variables
-$primary: rgb(2, 11, 31);
+$primary: hsl(221, 88%, 6%);
 $light: hsl(0, 1%, 66%);
 $line-height: 1px;
-$tcol: hsl(0, 1%, 73%);
-$tmute: hsl(0, 1%, 50%);
+$tcol: hsl(0, 1%, 90%);
+$tmute: hsl(0, 1%, 70%);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/material-icons/iconfont/material-icons.css';
@@ -101,7 +101,7 @@ a {
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, rgb(2, 25, 69) 0%, rgb(0, 0, 0)100%);
+  background: linear-gradient(60deg, hsl(219, 94%, 40%) 0%, rgb(0, 0, 0)100%);
   color: $light;
 }
 

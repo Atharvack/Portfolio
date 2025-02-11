@@ -78,7 +78,7 @@
                       <p class="lead text-center text-white mb-4">
                         {{ hero.description }}
                       </p>
-                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-3">
                         <a href="https://www.linkedin.com/in/atharvack" target="_blank">
                          
                           <!-- <span class="material-icons-outlined ms-2">help_outline</span> -->
@@ -90,6 +90,22 @@
                         <a href="https://github.com/Atharvack" target="_blank">
                         <button type="button" id="demo" class="btn btn-outline-light btn-lg text-uppercase px-4 py-2 me-sm-3">
                           Github
+                          <!-- <span class="material-icons-outlined ms-2">play_circle</span> -->
+                        </button>
+                        </a>
+                      </div>
+                      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <a href="https://www.credly.com/users/atharva-kulkarni.e949c9a2" target="_blank">
+                         
+                          <!-- <span class="material-icons-outlined ms-2">help_outline</span> -->
+                        <button type="button" class="btn btn-outline-light btn-lg text-uppercase px-4 py-2 me-sm-3">
+                          Certifications
+                          <!-- <span class="material-icons-outlined ms-2">help_outline</span> -->
+                        </button>
+                        </a>
+                        <a href="https://github.com/Atharvack" target="_blank">
+                        <button type="button" id="demo" class="btn btn-light btn-lg text-uppercase px-4 py-2 me-sm-3">
+                          Resume
                           <!-- <span class="material-icons-outlined ms-2">play_circle</span> -->
                         </button>
                         </a>
@@ -202,8 +218,8 @@
                       {% endif %}
 
                       <div class="card-body p-4">
-                        <h5 class="card-title mb-3">{{ project.name }}</h5>
-                        <p class="card-text">
+                        <h5 class="card-title fw-bold mb-3">{{ project.name }}</h5>
+                        <p class="card-text text-primary">
                           {{ project.description }}
                         </p>
                         <div class="mb-2">
