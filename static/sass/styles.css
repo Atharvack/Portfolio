@@ -37,7 +37,7 @@
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
-  --bs-light: hsl(0, 1%, 66%);
+  --bs-light: hsl(0, 1%, 100%);
   --bs-dark: #212529;
   --bs-primary-rgb: 2, 10, 29;
   --bs-secondary-rgb: 108, 117, 125;
@@ -45,7 +45,7 @@
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 169, 167, 167;
+  --bs-light-rgb: 255, 255, 255;
   --bs-dark-rgb: 33, 37, 41;
   --bs-primary-text-emphasis: #01040c;
   --bs-secondary-text-emphasis: #2b2f32;
@@ -2014,13 +2014,13 @@ progress {
 
 .table-light {
   --bs-table-color: #000;
-  --bs-table-bg: hsl(0, 1%, 66%);
-  --bs-table-border-color: #989696;
-  --bs-table-striped-bg: #a19f9f;
+  --bs-table-bg: hsl(0, 1%, 100%);
+  --bs-table-border-color: #e6e6e6;
+  --bs-table-striped-bg: #f2f2f2;
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: #989696;
+  --bs-table-active-bg: #e6e6e6;
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: #9c9a9a;
+  --bs-table-hover-bg: #ececec;
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3107,19 +3107,19 @@ textarea.form-control-lg {
 
 .btn-light {
   --bs-btn-color: #000;
-  --bs-btn-bg: hsl(0, 1%, 66%);
-  --bs-btn-border-color: hsl(0, 1%, 66%);
+  --bs-btn-bg: hsl(0, 1%, 100%);
+  --bs-btn-border-color: hsl(0, 1%, 100%);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #908e8e;
-  --bs-btn-hover-border-color: #878686;
-  --bs-btn-focus-shadow-rgb: 144, 142, 142;
+  --bs-btn-hover-bg: #d9d9d9;
+  --bs-btn-hover-border-color: #cccccc;
+  --bs-btn-focus-shadow-rgb: 217, 217, 217;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #878686;
-  --bs-btn-active-border-color: #7f7d7d;
+  --bs-btn-active-bg: #cccccc;
+  --bs-btn-active-border-color: #bfbfbf;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: hsl(0, 1%, 66%);
-  --bs-btn-disabled-border-color: hsl(0, 1%, 66%);
+  --bs-btn-disabled-bg: hsl(0, 1%, 100%);
+  --bs-btn-disabled-border-color: hsl(0, 1%, 100%);
 }
 
 .btn-dark {
@@ -3242,19 +3242,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  --bs-btn-color: hsl(0, 1%, 66%);
-  --bs-btn-border-color: hsl(0, 1%, 66%);
+  --bs-btn-color: hsl(0, 1%, 100%);
+  --bs-btn-border-color: hsl(0, 1%, 100%);
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: hsl(0, 1%, 66%);
-  --bs-btn-hover-border-color: hsl(0, 1%, 66%);
-  --bs-btn-focus-shadow-rgb: 169, 167, 167;
+  --bs-btn-hover-bg: hsl(0, 1%, 100%);
+  --bs-btn-hover-border-color: hsl(0, 1%, 100%);
+  --bs-btn-focus-shadow-rgb: 255, 255, 255;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: hsl(0, 1%, 66%);
-  --bs-btn-active-border-color: hsl(0, 1%, 66%);
+  --bs-btn-active-bg: hsl(0, 1%, 100%);
+  --bs-btn-active-border-color: hsl(0, 1%, 100%);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: hsl(0, 1%, 66%);
+  --bs-btn-disabled-color: hsl(0, 1%, 100%);
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: hsl(0, 1%, 66%);
+  --bs-btn-disabled-border-color: hsl(0, 1%, 100%);
   --bs-gradient: none;
 }
 
@@ -6902,8 +6902,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-light-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-light:hover, .link-light:focus {
-  color: RGBA(186, 185, 185, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(186, 185, 185, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(255, 255, 255, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(255, 255, 255, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-dark {
@@ -11986,15 +11986,21 @@ hr {
 /* ---------- BUTTONS ---------- */
 .btn-light {
   color: hsl(221, 88%, 6%);
+  border-color: hsl(221, 88%, 6%);
 }
 
 .btn-light:hover {
-  background-color: transparent;
-  color: hsl(0, 1%, 66%);
+  background-color: hsl(221, 88%, 6%);
+  color: hsl(0, 1%, 100%);
 }
 
-.btn-outline-light:hover {
+.btn-outline-light {
   color: hsl(221, 88%, 6%);
+  border-color: hsl(221, 88%, 6%);
+}
+.btn-outline-light:hover {
+  background-color: hsl(221, 88%, 6%);
+  color: hsl(0, 1%, 100%);
 }
 
 /* ---------- ICONS ---------- */
@@ -12007,7 +12013,7 @@ a .material-icons-outlined {
 }
 
 .navbar-toggler .material-icons-outlined {
-  color: hsl(0, 1%, 66%);
+  color: hsl(0, 1%, 100%);
   font-size: 30px;
 }
 
@@ -12026,7 +12032,7 @@ a .material-icons-outlined {
 
 /* ---------- NAVBAR ---------- */
 .nav-link:hover {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 /* ---------- HERO ---------- */
@@ -12038,27 +12044,36 @@ a .material-icons-outlined {
   height: 500px;
 }
 
+.card-img-top {
+  border: 5px solid hsl(0, 1%, 100%);
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
 .hero-not-found {
   height: 100px;
 }
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, hsl(219, 94%, 40%) 0%, rgb(0, 0, 0) 100%);
-  color: hsl(0, 1%, 66%);
+  background: linear-gradient(60deg, hsl(0, 0%, 100%) 0%, rgb(0, 0, 0) 100%);
+  color: hsl(0, 1%, 100%);
 }
 
 /*--------text-----------*/
 h2, .h2 {
-  color: hsl(0, 1%, 90%);
+  color: hsl(0, 1%, 100%);
 }
 
 h5, .h5 {
-  color: hsl(0, 1%, 90%);
+  color: hsl(0, 1%, 100%);
 }
 
 p {
-  color: hsl(0, 1%, 70%);
+  color: hsl(0, 1%, 90%);
 }
 
 /* ---------- ABOUT ---------- */
@@ -12066,7 +12081,7 @@ p {
   width: 58px;
   height: 58px;
   vertical-align: middle;
-  color: hsl(0, 1%, 66%);
+  color: hsl(0, 1%, 100%);
 }
 
 .about {
@@ -12075,7 +12090,7 @@ p {
 
 /* ---------- PROJECTS ---------- */
 .card {
-  background-color: hsl(0, 1%, 90%);
+  background-color: hsl(0, 1%, 100%);
 }
 .card img {
   height: 250px;
@@ -12089,7 +12104,7 @@ p {
 .custom-gradient {
   position: relative;
   background: linear-gradient(60deg, rgb(255, 255, 255) 0%, rgb(0, 0, 0) 100%);
-  color: hsl(0, 1%, 66%);
+  color: hsl(0, 1%, 100%);
 }
 
 /* ---------- WAVES ---------- */

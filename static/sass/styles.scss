@@ -1,9 +1,10 @@
 // custom variables
+// $primary: hsl(0, 0%, 100%);
 $primary: hsl(221, 88%, 6%);
-$light: hsl(0, 1%, 66%);
+$light: hsl(0, 1%, 100%);
 $line-height: 1px;
-$tcol: hsl(0, 1%, 90%);
-$tmute: hsl(0, 1%, 70%);
+$tcol: hsl(0, 1%, 100%);
+$tmute: hsl(0, 1%, 90%);
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import '../node_modules/material-icons/iconfont/material-icons.css';
@@ -25,18 +26,22 @@ hr{
 
 .btn-light {
   color: $primary;
+  border-color: $primary;
 }
 
 .btn-light {
   &:hover {
-    background-color: transparent;
+    background-color: $primary;
     color: $light;
   }
 }
 
 .btn-outline-light {
+  color: $primary;
+  border-color: $primary;
   &:hover {
-    color: $primary;
+    background-color: $primary;
+    color: $light;
   }
 }
 
@@ -81,7 +86,7 @@ a {
 
 .nav-link {
   &:hover {
-    font-weight: bold;
+    font-weight: bolder;
   }
 }
 
@@ -93,6 +98,15 @@ a {
 
 .hero-image {
   height: 500px;
+
+}
+
+.card-img-top {
+  border: 5px solid $tcol;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
 }
 
 .hero-not-found {
@@ -101,13 +115,15 @@ a {
 
 .header {
   position: relative;
-  background: linear-gradient(60deg, hsl(219, 94%, 40%) 0%, rgb(0, 0, 0)100%);
+  background: linear-gradient(60deg, hsl(0, 0%, 100%) 0%, rgb(0, 0, 0)100%);
+  // background: linear-gradient(60deg, hsl(219, 94%, 40%) 0%, rgb(0, 0, 0)100%);
   color: $light;
 }
 
 /*--------text-----------*/
 h2{
 color:$tcol;
+
 }
 h5{
   color:$tcol;
