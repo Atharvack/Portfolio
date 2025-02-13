@@ -12044,8 +12044,8 @@ a .material-icons-outlined {
   height: 500px;
 }
 
-.card-img-top {
-  border: 5px solid hsl(0, 1%, 100%);
+.hero-card-img-top {
+  border: 10px solid hsl(0, 1%, 100%);
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;
